@@ -1,0 +1,31 @@
+body {
+    font-family:"trebuchet ms",sans-serif;
+    font-size:90%;
+    position: absolute; 
+    top: 48%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-image: url("cl.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    }
+    p {
+    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+    }
+   form {
+    padding:10px;
+    width:280px;
+    }
+    input{
+        padding:3px;
+        border:1px solid #F5C5C5;
+        border-radius:5px;
+        width:200px;
+        box-shadow:1px 1px 2px #C0C0C0 inset;
+    }
+    input[type=submit] {
+        width:100px;
+        margin-left:5px;
+        box-shadow:1px 1px 1px #D83F3D;
+        cursor:pointer;
+        }
