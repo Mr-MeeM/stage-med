@@ -1,6 +1,26 @@
 <?php
-try {
-    $access=new pdo("mysql:host=localhost;dbnane=sall555e-de-sport; charset=utf8", "root", "");
-    $access->setattribute(PDO::ATTR_ERRMODE, PDO:: ERRMODE_WARNING);
- } catch (Exception $e)
- {  $e->getMessage();} 
+
+class connect{
+
+    public function __construct()
+    {
+        $hostname = "localhost";
+        $username = "root";
+        $password = "123456";
+        $dbname = 'salle-de-sport';
+        $dbh =null;
+
+        try {
+            new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
+        }
+    }
+
+}
+
+
+
+
